@@ -1,0 +1,109 @@
+/* Page Container */
+.admin-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3); /* Light blue gradient */
+  min-height: 100vh;
+  padding: 40px 20px;
+  animation: fadeIn 0.7s ease-in;
+}
+
+/* Header */
+.admin-page h1 {
+  font-size: 2.5rem;
+  color: #2a4365;
+  margin-bottom: 30px;
+  animation: slideDown 0.6s ease-out;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeInTable 0.9s ease-in;
+}
+
+th, td {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #2b6cb0; /* Deep blue */
+  color: white;
+  font-weight: 600;
+}
+
+tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.3s ease;
+}
+
+/* Center text in first column */
+td:first-child {
+  text-align: center;
+}
+
+/* Loading and Empty Message */
+.admin-page p {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Scrollable table for overflow */
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInTable {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  th, td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .admin-page h1 {
+    font-size: 1.8rem;
+  }
+}
