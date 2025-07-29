@@ -186,13 +186,29 @@ const InitialForm = () => {
 
           <div className="form-group">
             <label htmlFor="wingname">Wing Name:</label>
-            <input
-              type="text"
+            <select
               id="wingname"
               value={wingname}
               onChange={(e) => setWingname(e.target.value)}
               required
-            />
+            >
+              <option value="">Select Wing</option>
+              <option value="Content Creation and Advertising">1 - Content Creation and Advertising</option>
+              <option value="Event Management">2 - Event Management</option>
+              <option value="Editing">3 - Editing</option>
+              <option value="Social Media Marketing">4 - Social Media Marketing</option>
+              <option value="Versatalkies">5 - Versatalkies</option>
+              <option value="Versascripts">6 - Versascripts</option>
+              <option value="Public speaking and Stage Management">7 - Public speaking and Stage Management</option>
+              <option value="Promotions">8 - Promotions</option>
+              <option value="Versatales Quotes Gallery">9 - Versatales Quotes Gallery</option>
+              <option value="Podcast Hub">10 - Podcast Hub</option>
+              <option value="Script Writing">11 - Script Writing</option>
+              <option value="VersaDesigns">12 - VersaDesigns</option>
+              <option value="Versaphotography">13 - Versaphotography</option>
+              <option value="Articles and Magazines">14 - Articles and Magazines</option>
+              <option value="Broadcasting Team">15 - Broadcasting Team</option>
+            </select>
           </div>
 
           <div className="form-group">
