@@ -1,0 +1,80 @@
+:root {
+  --deep-navy: #0a0f3c;
+  --dark-gray: #1e1e2f;
+  --neon-cyan: #00ffff;
+  --light-gray: #f1f1f1;
+}
+
+.about-us-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: var(--deep-navy);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading section */
+.about-us-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-us-header h1 {
+  font-size: 36px;
+  color: var(--neon-cyan);
+  margin-bottom: 16px;
+}
+
+.about-us-header p {
+  font-size: 18px;
+  color: #c9d1d9;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Two card layout */
+.two-card-layout {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  background-color: var(--dark-gray);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 255, 255, 0.2);
+  min-width: 300px;
+}
+
+/* Left Card: Image */
+.left-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid var(--neon-cyan);
+}
+
+/* Right Card: Content */
+.right-card h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: var(--neon-cyan);
+}
+
+.right-card p {
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.6;
+}

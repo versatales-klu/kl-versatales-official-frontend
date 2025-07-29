@@ -1,0 +1,114 @@
+/* Base container */
+.wing-container {
+  padding: 40px 20px;
+  background-color: #0d1b2a; /* Deep navy blue */
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Heading style */
+.wing-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00f7ff; /* Neon cyan */
+  font-weight: 700;
+}
+
+/* Controls layout */
+.scroll-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Scroll button styles */
+.scroll-btn {
+  font-size: 2.5rem;
+  padding: 8px 16px;
+  margin: 0 10px;
+  border: none;
+  background-color: transparent;
+  color: #00f7ff;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  z-index: 2;
+}
+
+.scroll-btn:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+/* Scrollable area */
+.wing-scroll-area {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 24px;
+  padding: 20px 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.wing-scroll-area::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Each card */
+.wing-card {
+  min-width: 250px;
+  max-width: 280px;
+  background-color: #1b263b; /* Dark blue-gray */
+  border-radius: 16px;
+  padding: 24px 16px;
+  box-shadow: 0 0 12px rgba(0, 247, 255, 0.2);
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
+}
+
+/* Icon in the card */
+.wing-icon {
+  color: #00f7ff;
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+/* Card title */
+.wing-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.wing-description {
+  font-size: 0.95rem;
+  color: #d0e6f6;
+  line-height: 1.4;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .wing-heading {
+    font-size: 2rem;
+  }
+
+  .wing-card {
+    min-width: 220px;
+    padding: 20px 14px;
+  }
+
+  .scroll-btn {
+    font-size: 2rem;
+    margin: 0 5px;
+  }
+}
