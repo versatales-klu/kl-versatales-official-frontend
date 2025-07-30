@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
-import SampleImage from './../../assets/Gallery/Blood_camp.jpg';
+import VersatileVideo from './../../assets/Gallery/versatilevedio.mp4';
 
 const AboutUs = () => {
   return (
@@ -18,7 +18,16 @@ const AboutUs = () => {
       {/* Two Card Layout */}
       <section className="two-card-layout">
         <div className="card left-card">
-          <img src={SampleImage} alt="Versatales Visual" className="card-image" />
+          <video
+            className="card-image"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src={VersatileVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="card right-card">
           <h2>Discover Your Role</h2>

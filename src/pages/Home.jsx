@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-
+import Footer from './Footer.jsx'
 import Hero from '../components/Hero/Hero.jsx';
 import AboutUs from '../components/AboutUs/AboutUs.jsx';
 import WingGallery from '../components/WingGallery/WingGallery.jsx';
@@ -13,6 +13,7 @@ const Home = () => {
       <Hero />
       <AboutUs />
       <WingGallery />
+      <Footer/>
       {/* <PhotoGallery /> */}
       {/* <TeamGallery /> */}
     </>
